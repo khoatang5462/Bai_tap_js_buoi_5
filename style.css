@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+   
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+table thead th{
+    border: 1px solid black;
+}
+table thead tr{
+    border: 1px solid black;
+}
+
+table tbody tr td{
+    border: 1px solid black;
+
+}
