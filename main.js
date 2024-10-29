@@ -141,7 +141,7 @@ document.getElementById("btnTinh").onclick = function () {
     let soKenhCaoCap = document.getElementById("soKenhCaoCap").value * 1;
     let soKetNoi = document.getElementById("soKetNoi").value * 1;
 
-    let tongTienCap = tinhTienDien(loaiKhachHang, soKenhCaoCap, soKetNoi);
+    let tongTienCap = tinhTienCap(loaiKhachHang, soKenhCaoCap, soKetNoi);
 
     document.getElementById("ketQuaTienCap").innerHTML =
         "Mã khách hàng: " +
@@ -151,7 +151,7 @@ document.getElementById("btnTinh").onclick = function () {
         " $";
 };
 
-function tinhTienDien(loaiKhachHang, soKenhCaoCap, soKetNoi) {
+function tinhTienCap(loaiKhachHang, soKenhCaoCap, soKetNoi) {
     let tongTienCap = 0;
     if (loaiKhachHang === "hoGiaDinh") {
         tongTienCap = 4.5 + 20.5 + 7.5 * soKenhCaoCap;
